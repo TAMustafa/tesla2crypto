@@ -20,7 +20,7 @@
   items={$TeslaStore}
   {groupBy}
   on:select={handleSelect}
-  placeholder="Select Tesla" />
+  placeholder="Select Tesla Model" />
 </div>
 
 <style>
