@@ -1,0 +1,86 @@
+import { readable } from "svelte/store"
+
+const TeslaStore = readable([
+  {
+    id: 1,
+    group: "Model S",
+    label: "Long Range Plus",
+    value: "Long Range Plus",
+    price: 63920,
+    image: "",
+  },
+  {
+    id: 2,
+    group: "Model S",
+    label: "Performance",
+    value: "Performance",
+    price: 86490,
+    image: "",
+  },
+  {
+    id: 3,
+    group: "Model S",
+    label: "Plaid",
+    value: "Plaid",
+    price: 134490,
+    image: "",
+  },
+  {
+    id: 4,
+    group: "Model 3",
+    label: "Standard Range Plus",
+    value: "Standard Range Plus1",
+    price: 33690,
+    image: "",
+  },
+  {
+    id: 5,
+    group: "Model 3",
+    label: "Long Range",
+    value: "Long Range1",
+    price: 42690,
+    image: "",
+  },
+  {
+    id: 6,
+    group: "Model 3",
+    label: "Performance",
+    value: "Performance1",
+    price: 50690,
+    image: "",
+  },
+  {
+    id: 7,
+    group: "Model X",
+    label: "Long Range Plus",
+    value: "Long Range Plus2",
+    price: 74690,
+    image: "",
+  },
+  {
+    id: 8,
+    group: "Model X",
+    label: "Performance",
+    value: "Performance2",
+    price: 94690,
+    image: "",
+  },
+  {
+    id: 9,
+    group: "Model Y",
+    label: "Long Range",
+    value: "Long Range2",
+    price: 45690,
+    image: "",
+  },
+  {
+    id: 10,
+    group: "Model Y",
+    label: "Performance",
+    value: "Performance3",
+    price: 55690,
+    image: "",
+  },
+])
+
+export default TeslaStore
