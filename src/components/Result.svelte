@@ -2,13 +2,16 @@
   export let coin;
   export let tesla;
 
+  // Calculate and apply thousand seperation with 2 didgit after comma.
   $: calculate = tesla.price / coin.price
+  $: decimal = calculate.toFixed(2)
+  $: refined = decimal.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")
 </script>
 
 
   <h4>Tesla <span>{tesla.group} - {tesla.label}</span> costs: </h4>
   <img src="{coin.image}" alt="{coin.value}" id="coin_img">
-  <h2> <strong id="coin_price">{calculate.toFixed(2)} {coin.symbol.toUpperCase()}</strong></h2>
+  <h2> <strong id="coin_price">{refined} {coin.symbol.toUpperCase()}</strong></h2>
 
 <style>
   h4 {
