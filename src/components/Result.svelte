@@ -5,7 +5,7 @@
   // Calculate and apply thousand seperation with 2 didgit after comma.
   $: calculate = tesla.price / coin.price
   $: decimal = calculate.toFixed(2)
-  $: refined = decimal.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")
+  $: refined = new Intl.NumberFormat().format(decimal);
 </script>
 
 
