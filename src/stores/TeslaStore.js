@@ -68,13 +68,21 @@ const TeslaStore = readable([
   {
     id: 9,
     group: "Model Y",
+    label: "Standard Range",
+    value: "Standard Range",
+    price: 37690,
+    image: "",
+  },
+  {
+    id: 10,
+    group: "Model Y",
     label: "Long Range",
     value: "Long Range2",
     price: 45690,
     image: "",
   },
   {
-    id: 10,
+    id: 11,
     group: "Model Y",
     label: "Performance",
     value: "Performance3",
